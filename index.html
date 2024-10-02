@@ -23,11 +23,11 @@
         <div id="nav-icon">
             <a href="#" id="search-icon" style="color: #333;">
                 <i style="font-size: 20px;" class="fas fa-search"style="color: #333;"></i>
+                <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer; ">
+                    <i style="font-size: 20px;" class="fas">&#xf2bd;</i>
+                </button>
 
-                <button id="user-icon" style=" color: #333;">
-                    <i style="font-size:20px" class="fas">&#xf2bd;</i>
-                  </button>
-                  
+<!--                   
                   <div id="popupForm" class="form-popup">
                     <form class="form-container">
                       <h2 st>Sign In</h2>
@@ -41,7 +41,7 @@
                   
                       <p>Not registered yet? <a href="#" style="color: #6B7280; color: #000;">Create an account</a></p>
                     </form>
-                  </div>
+                  </div> -->
                   
             <a href="#" id="cart-icon"style="color: #333;">
                 <i style="font-size:20px" class="fas">&#xf07a;</i>
@@ -175,8 +175,36 @@
                 <rect width="24" height="24" rx="4" fill="#E0E0E0"/>
                 <path d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
                 </svg>
-            </div>                
-            <img src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__" alt="Item 8 Image">
+            </div>  
+
+            <div class="item">
+                <img src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__" alt="Countdown Background">
+                
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-label">D</div>
+
+                        <div class="countdown-number">27</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">H</div>
+
+                        <div class="countdown-number">11</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">M</div>
+                        <div class="countdown-number">57</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">S</div>
+                        <div class="countdown-number">10</div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            
+            
             <p class="item-name">Item 8</p>
             <p class="price">$10.6</p>
             <div class="rating">
@@ -247,34 +275,32 @@
 </section>
 
 <script>
-   document.getElementById('user-icon').onclick = function() {
-    var popupForm = document.getElementById('popupForm');
-    var overlay = document.getElementById('overlay');
-    
-    // Toggle the form and overlay visibility
-    if (popupForm.style.display === 'block') {
-        popupForm.style.display = 'none';
-        overlay.style.display = 'none';
-    } else {
-        popupForm.style.display = 'block';
-        overlay.style.display = 'block';
-    }
-};
+    var countdownDate = new Date("Oct 31, 2024 00:00:00").getTime();
 
-// Close form function
-function closeForm() {
-    document.getElementById('popupForm').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-}
+    var countdownFunction = setInterval(function() {
 
-// Close form when clicking outside of the form
-window.onclick = function(event) {
-    if (event.target == document.getElementById('overlay')) {
-        closeForm();
-    }
-};
+        var now = new Date().getTime();
 
-    </script>
+        var timeRemaining = countdownDate - now;
+
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.querySelector(".countdown .countdown-item:nth-child(1) .countdown-number").innerHTML = days;
+        document.querySelector(".countdown .countdown-item:nth-child(2) .countdown-number").innerHTML = hours;
+        document.querySelector(".countdown .countdown-item:nth-child(3) .countdown-number").innerHTML = minutes;
+        document.querySelector(".countdown .countdown-item:nth-child(4) .countdown-number").innerHTML = seconds;
+
+        if (timeRemaining < 0) {
+            clearInterval(countdownFunction);
+            document.querySelector(".countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+
 
 </body>
 </html>

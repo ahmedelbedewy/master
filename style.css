@@ -97,10 +97,10 @@ margin-top: 60px;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-
+/* 
 .item img:hover {
     transform: scale(1.1);
-}
+} */
 
 .heart-icon {
     position: absolute;
@@ -244,7 +244,7 @@ margin-top: 60px;
 .payment-icons img {
     margin: 0 5px;
 }
-/* Popup form container */
+
 .form-popup {
     display: none;
     position: fixed;
@@ -262,7 +262,6 @@ margin-top: 60px;
     gap: 20px;
   }
   
-  /* Form input and button styling */
   input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -288,7 +287,6 @@ margin-top: 60px;
     background-color: darkgray;
   }
   
-  /* Close the form */
   #popupForm.show {
     display: block;
   }
@@ -297,4 +295,46 @@ margin-top: 60px;
     text-align: left;
 
 
+}
+.countdown {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    position: absolute; 
+    bottom: 10px;       
+    left: 50%;          
+    transform: translateX(-50%);
+}
+
+/* Countdown items */
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0;
+    width: 60px; 
+    margin: 0 5px; 
+    overflow: hidden; 
+}
+
+.countdown-label {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.countdown-number {
+    background-color: white;
+    color: black;
+    font-size: 18px; 
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0px;
+    margin: 0;
 }
