@@ -23,25 +23,25 @@
         <div id="nav-icon">
             <a href="#" id="search-icon" style="color: #333;">
                 <i style="font-size: 20px;" class="fas fa-search"style="color: #333;"></i>
-                <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer; ">
+                <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer;">
                     <i style="font-size: 20px;" class="fas">&#xf2bd;</i>
                 </button>
-
-<!--                   
-                  <div id="popupForm" class="form-popup">
+                
+                <div id="popupForm" class="form-popup">
                     <form class="form-container">
-                      <h2 st>Sign In</h2>
-                  
-                      <label for="email"><b>Your email</b></label>
-                      <input type="email" placeholder="name@example.com" name="email" required>
-                  
-                      <label><a href="#" style="color: #6B7280;">Log in with phone number?</a></label>
-                  
-                      <button type="submit" class="btn" >Login to your account</button>
-                  
-                      <p>Not registered yet? <a href="#" style="color: #6B7280; color: #000;">Create an account</a></p>
+                        <h2>Sign In</h2>
+                
+                        <label for="email"><b>Your email</b></label>
+                        <input type="email" placeholder="name@example.com" name="email" required>
+                
+                        <label><a href="#" style="color: #6B7280;">Log in with phone number?</a></label>
+                
+                        <button type="submit" class="btn">Login to your account</button>
+                
+                        <p>Not registered yet? <a href="#" style="color: #6B7280; color: #000;">Create an account</a></p>
                     </form>
-                  </div> -->
+                </div>
+                
                   
             <a href="#" id="cart-icon"style="color: #333;">
                 <i style="font-size:20px" class="fas">&#xf07a;</i>
@@ -298,6 +298,26 @@
             document.querySelector(".countdown").innerHTML = "EXPIRED";
         }
     }, 1000);
+    const userIcon = document.getElementById('user-icon');
+const popupForm = document.getElementById('popupForm');
+const overlay = document.createElement('div');
+
+// إضافة خلفية مظللة
+overlay.className = 'overlay';
+document.body.appendChild(overlay);
+
+// عند الضغط على زر المستخدم لفتح الـ popup
+userIcon.addEventListener('click', () => {
+    popupForm.classList.add('show');
+    overlay.classList.add('show');
+});
+
+// إغلاق الـ popup عند الضغط على الخلفية المظللة
+overlay.addEventListener('click', () => {
+    popupForm.classList.remove('show');
+    overlay.classList.remove('show');
+});
+
 </script>
 
 

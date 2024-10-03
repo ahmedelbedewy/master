@@ -244,7 +244,6 @@ margin-top: 60px;
 .payment-icons img {
     margin: 0 5px;
 }
-
 .form-popup {
     display: none;
     position: fixed;
@@ -260,9 +259,9 @@ margin-top: 60px;
     width: 448px;
     height: 327px;
     gap: 20px;
-  }
-  
-  input[type="email"] {
+}
+
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 5px 0 20px 0;
@@ -270,9 +269,9 @@ margin-top: 60px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-  }
-  
-  button.btn {
+}
+
+button.btn {
     background-color: black;
     color: white;
     padding: 10px;
@@ -281,21 +280,36 @@ margin-top: 60px;
     width: 384px;
     border-radius: 5px;
     gap: 8px;
-  }
-  
-  button.btn:hover {
-    background-color: darkgray;
-  }
-  
-  #popupForm.show {
-    display: block;
-  }
-  .form-container{
-
-    text-align: left;
-
-
 }
+
+button.btn:hover {
+    background-color: darkgray;
+}
+
+#popupForm.show {
+    display: block;
+}
+
+.form-container {
+    text-align: left;
+}
+
+/* خلفية مظللة عند عرض الـ popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+}
+
 .countdown {
     display: flex;
     justify-content: center; 
