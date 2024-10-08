@@ -57,6 +57,7 @@
         </div>
         <p style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  </p>
  </section>
+ 
  <section id="section-four">
     <div class="items-container">
         <div class="item">
@@ -298,25 +299,26 @@
             document.querySelector(".countdown").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+
+
     const userIcon = document.getElementById('user-icon');
 const popupForm = document.getElementById('popupForm');
 const overlay = document.createElement('div');
 
-// إضافة خلفية مظللة
 overlay.className = 'overlay';
 document.body.appendChild(overlay);
 
-// عند الضغط على زر المستخدم لفتح الـ popup
 userIcon.addEventListener('click', () => {
     popupForm.classList.add('show');
     overlay.classList.add('show');
 });
 
-// إغلاق الـ popup عند الضغط على الخلفية المظللة
 overlay.addEventListener('click', () => {
     popupForm.classList.remove('show');
     overlay.classList.remove('show');
 });
+
 
 </script>
 

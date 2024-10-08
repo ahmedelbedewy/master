@@ -244,22 +244,6 @@ margin-top: 60px;
 .payment-icons img {
     margin: 0 5px;
 }
-.form-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 32px;
-    border: 1px solid #888;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    z-index: 9;
-    width: 448px;
-    height: 327px;
-    gap: 20px;
-}
 
 input[type="email"] {
     width: 100%;
@@ -270,7 +254,9 @@ input[type="email"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
+button.btn:hover {
+    background-color: darkgray;
+}
 button.btn {
     background-color: black;
     color: white;
@@ -281,17 +267,26 @@ button.btn {
     border-radius: 5px;
     gap: 8px;
 }
-
-button.btn:hover {
-    background-color: darkgray;
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 32px;
+    border: 1px solid #888;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10; /* Make sure it's on top */
+    width: 448px;
+    height: 327px;
+    visibility: hidden;
+    opacity: 0; /* Initially hidden */
 }
 
 #popupForm.show {
-    display: block;
-}
-
-.form-container {
-    text-align: left;
+    visibility: visible;
+    opacity: 1; /* Fully visible */
 }
 
 /* خلفية مظللة عند عرض الـ popup */
@@ -302,13 +297,20 @@ button.btn:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 8;
-    display: none;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0; /* Initially hidden */
 }
 
 .overlay.show {
-    display: block;
+    visibility: visible;
+    opacity: 1; /* Fully visible */
 }
+
+.form-container {
+    text-align: left;
+}
+
 
 .countdown {
     display: flex;
@@ -351,4 +353,186 @@ button.btn:hover {
     padding: 10px 0;
     border-radius: 0px;
     margin: 0;
+}
+
+
+/* page 2 */
+.parent-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space the items apart */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Ensure the parent container takes full width */
+}
+.items-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Space between the grid items */
+    justify-items: center;
+    align-items: start;
+    background: #FFFFFF;
+    margin-top: 30px;
+    width: 1050px;
+    height: 2040px;
+    margin-left: auto; /* Push the container to the right */
+}
+
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 330px;
+    height: 412px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+/* 
+.item img:hover {
+    transform: scale(1.1);
+} */
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #E0E0E0;
+    color: #000;/* Heart icon fill color */
+    width: 24px;
+    height: 24px;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+}
+
+.heart-icon svg {
+   
+    width: 24px;
+    height: 24px;
+}
+
+.item-name, .price, .rating {
+    margin: 0px 0; /* Adjust spacing between text elements */
+    text-align: center;
+}
+
+.rating {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filter-container {
+    display: block;  /* Switch to block layout for the container */
+    margin: 0 auto;  /* Center the container if needed */
+    width: 100%;   
+    /* margin-top: 28px;  Ensure it takes full width */
+}
+.filter-item {
+    width: 100%; /* Make each item take up the full width of the container */
+    background-color: #f0f0f0; /* Optional: background for better visibility */
+    padding: 10px;
+    text-align: left; /* Align the text to the left */
+    border-radius: 5px;
+}
+.filter-container {
+    width: 100%; /* Ensure full width */
+    margin-top: 30px; /* Add some space between buttons */
+}
+
+.filter-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+    width: 100%; /* Ensure buttons fill the container width */
+}
+
+.filter-button:hover {
+    background-color: #f7f7f7;
+}
+
+.filter-button svg {
+    margin-left: auto;
+}
+
+.swit-cont {
+    text-align: left;  /* Aligns the text to the left */
+    padding: 10px;
+    gap: 10px;
+    width: 1440px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 0;   /* Aligns the container itself to the left */
+    position: relative; /* Ensures proper positioning on the page */
+    font-family: Source Sans Pro;
+}
+.filter-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Adjust gap size as needed */
+}
+
+.filter-section span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-section span:last-child {
+    font-size: 14px;
+    color: gray;
+    margin-left: auto; /* Pushes the last span to the right */
+}
+
+.sort-section {
+    display: flex;
+    flex-direction: column; /* Stacks the label and select vertically */
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.sort-section label {
+    font-size: 14px;
+}
+
+.sort-select-container {
+    margin-top: 5px; /* Adds a small gap between the label and the select box */
+}
+
+.sort-section select {
+    font-size: 14px;
+    padding: 4px 8px;
+    width: 330px;
+    height: 44px;
+}
+
+#by-sort {
+    margin-bottom: 10px; /* Controls the spacing between label and dropdown */
+    text-align: left;
 }
