@@ -1,11 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <nav id="navbar">
+    <div class="logo">Logo</div>
+    <div id="nav-cont">
+      <a href="#section-two" style="color: #333">Home</a>
+      <a href="#section-three" style="color: #333">Shop</a>
+      <a href="#section-four" style="color: #333">Category</a>
+      <a href="#section-five" style="color: #333">Blog</a>
+      <a href="#section-five" style="color: #333">About</a>
+    </div>
+    <div id="nav-icon">
+      <a href="#" id="search-icon" style="color: #333">
+        <i
+          style="font-size: 20px"
+          class="fas fa-search"
+          style="color: #333"
+        ></i>
+      </a>
+      <button
+        id="user-icon"
+        style="
+          color: #333;
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+        "
+      >
+        <i style="font-size: 20px" class="fas">&#xf2bd;</i>
+      </button>
+      <!-- <div id="popupForm" class="form-popup">
+                <form class="form-container">
+                    <h2>Sign In</h2>
+                    <label for="email"><b>Your email</b></label>
+                    <input type="email" placeholder="name@example.com" name="email" required>
+                    <label><a href="#" style="color: #6B7280;">Log in with phone number?</a></label>
+                    <button type="submit" class="btn">Login to your account</button>
+                    <p>Not registered yet? <a href="#" style="color: #6B7280; color: #000;">Create an account</a></p>
+                </form>
+            </div> -->
+      <a href="#" id="cart-icon" style="color: #333">
+        <i style="font-size: 20px" class="fas">&#xf07a;</i>
+      </a>
+    </div>
+  </nav>
+
+  <section id="section-two">
+    <p style="background-color: #000000">Free shipping above 300 SAR</p>
+    <div id="Collections-fut">
+      <h2 style="color: #000000">Collections Name</h2>
+    </div>
+    <p style="color: #000000">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore
+    </p>
+  </section>
+
+  <div class="container-9">
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+      <a href="#"style="color:#000000;font-family:Source Sans Pro;font-size:14px;">Home</a> / <a href="#" style="color:#000000;font-family:Source Sans Pro;font-size:14px;" >Collections</a> /<a href="#" style="color:#767676;font-family:Source Sans Pro;font-size:14px;"> All Products
+      </a></nav>
+
+    <!-- Filter and Sort Section -->
+    <div class="filter-sort">
+      <div class="filter">
+        <p>Filter by</p>
+      </div>
+
+      <div class="product-count">
+        <p>1,036 products</p>
+      </div>
+
+      <div class="sort">
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="price-low-high">Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="row-gap: 20px;">
+    <div class="sidex col-md-3">
+      <div >
+        <div class="row-6">
+          <!-- Filters Grid -->
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Color <span class="float-end">+</span>
+            </div>
+          </div>
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Price <span class="float-end">+</span>
+            </div>
+          </div>
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Size <span class="float-end">+</span>
+            </div>
+          </div>
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Brand <span class="float-end">+</span>
+            </div>
+          </div>
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Type <span class="float-end">+</span>
+            </div>
+          </div>
+          <div class="col-12 filter-section">
+            <div class="filter-title">
+              Category <span class="float-end">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Updated section to follow grid layout -->
+    <section class="section-fourx col-md-9">
+      <div class="container">
+        <div class="row">
+          <!-- Start of an item in grid -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+              <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 5</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="card"style="border:none;">
+                    <div class="heart-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                    <path
+                      d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img
+                  class="card-img-top"
+                  src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                  alt="Item Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Item 1</h5>
+                  <p class="card-text">Price: $10.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <!-- Item 3 content here -->
+
+              <div class="card"style="border:none;">
+                <div class="heart-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                    <path
+                      d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <img
+                  class="card-img-top"
+                  src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                  alt="Item Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Item 1</h5>
+                  <p class="card-text">Price: $10.6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card"style="border:none;">
+                <div class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXR6-NDLo0PYt-Ludmw~F2YD9PfPaW4D9-24hpUxDmwnhb9fXAf98WMAaAMhKjRNkkpm2oPv1EjmGgMlpadPrtQPsgenu32e1ccZoLBMQd8uKC4yA16TcIpCeTz3jAev~z9rn6X808kxr079VYIawOcu1tpS~5kxlwQmQoVyxkSBV7~cmSsm5ljTnowE2j802PwR8u70tFIjqdDQxN~5otOeSFcAFapn8AKbooWAPKlwvL99YTs0lh8balEh7PE0CTdIM0Ap78NUYX-Dmq7XfHR77C4T23wAeIgNtKMUQgzOJpQS0XKYiglow2x6s~PFO9JEReXKmwH8sfNjUAoSXg__"
+                alt="Item Image"/>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-label">D</div>
     
+                        <div class="countdown-number">27</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">H</div>
+    
+                        <div class="countdown-number">11</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">M</div>
+                        <div class="countdown-number">57</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-label">S</div>
+                        <div class="countdown-number">10</div>
+                    </div>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Item 1</h5>
+                <p class="card-text">Price: $10.6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="section-five">
+    <div class="container-footer">
+      <div class="row footer-container">
+        <!-- Logo and About Section -->
+        <div class="col-lg-3 col-md-6 footer-column">
+          <div class="footer-logo">
+            <h3>Logo</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+
+        <!-- Explore Links -->
+        <div class="col-lg-3 col-md-6 footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Payment Security Policy</a></li>
+            <li><a href="#">Terms of Use Policy</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Specials</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact and Social Icons -->
+        <div class="col-lg-3 col-md-6 footer-column">
+          <h3>Contact Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
+        </p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-paypal"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa fa-cc-amex"></i>
+          <i class="fa fa-cc-discover" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
-</html>
