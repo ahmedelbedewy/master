@@ -20,6 +20,7 @@
 
   <body>
     <nav id="navbar">
+        <!-- Navbar structure -->
         <div class="logo">Logo</div>
         <div id="nav-cont">
           <a href="#section-two" style="color: #333">Home</a>
@@ -30,39 +31,36 @@
         </div>
         <div id="nav-icon">
           <a href="#" id="search-icon" style="color: #333">
-            <i
-              style="font-size: 20px"
-              class="fas fa-search"
-              style="color: #333"
-            ></i>
+            <i style="font-size: 20px" class="fas fa-search"></i>
           </a>
-          <button
-            id="user-icon"
-            style="
-              color: #333;
-              background: none;
-              border: none;
-              padding: 0;
-              cursor: pointer;
-            "
-          >
+          <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer;">
             <i style="font-size: 20px" class="fas">&#xf2bd;</i>
           </button>
-          <!-- <div id="popupForm" class="form-popup">
-                    <form class="form-container">
-                        <h2>Sign In</h2>
-                        <label for="email"><b>Your email</b></label>
-                        <input type="email" placeholder="name@example.com" name="email" required>
-                        <label><a href="#" style="color: #6B7280;">Log in with phone number?</a></label>
-                        <button type="submit" class="btn">Login to your account</button>
-                        <p>Not registered yet? <a href="#" style="color: #6B7280; color: #000;">Create an account</a></p>
-                    </form>
-                </div> -->
           <a href="#" id="cart-icon" style="color: #333">
-            <i style="font-size: 20px" class="fas">&#xf07a;</i>
+            <i style="font-size: 20px" class="fas fa-shopping-cart"></i>
           </a>
         </div>
       </nav>
+      
+      <!-- Sign In Modal -->
+      <div id="signInModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2 id="sign-in">Sign In</h2>
+          <form>
+            <label for="email" id="your-mail"><b> Your email</b></label>
+            <input class="in-1" type="email" placeholder="name@example.com" name="email" required><br>
+            <br>
+
+            <a href="#" class="heper-1">Login with phone number?</a>
+
+            <button type="submit" class="btn-model"><span id="btn-follow">login to your account</span> </button>
+            <p><span id="not-1">Not registered yet?</span> <a href="#" id="create-1">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+      
+
     
       <section id="section-two">
         <p style="background-color: #000000">Free shipping above 300 SAR</p>
@@ -77,7 +75,7 @@
     
       <div class="container-9">
     
-    <div class="container-fluid">
+    <div class="container-">
       <div class="row">
         <div class="col-6 col-md-3 ">
             <div class="card">
@@ -106,6 +104,8 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div>
         </div>
@@ -136,6 +136,8 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div></div>
         <div class="col-6 col-md-3 "><div class="card">
@@ -164,6 +166,8 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div></div>
         <div class="col-6 col-md-3 ">
@@ -193,11 +197,12 @@
             <div class="card-body">
               <h5 class="card-title">Item 85</h5>
               <p class="card-text">Price: $10.6</p>
-              <!-- <p class="rating">★★★★☆</p>> -->
+              <p class="rating" >★★★★☆</p>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-3 "><div class="card">
+        <div class="col-6 col-md-3 ">
+            <div class="card">
             <div class="heart-icon">
               <svg
                 width="24"
@@ -223,6 +228,8 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div></div>
         <div class="col-6 col-md-3 "><div class="card">
@@ -251,6 +258,8 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div></div>
         <div class="col-6 col-md-3 "><div class="card">
@@ -279,9 +288,12 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
           </div></div>
-        <div class="col-6 col-md-3 "><div class="card">
+        <div class="col-6 col-md-3 ">
+            <div class="card">
             <div class="heart-icon">
               <svg
                 width="24"
@@ -307,8 +319,16 @@
             <div class="card-body">
               <h5 class="card-title">Item 15</h5>
               <p class="card-text">Price: $10.6</p>
+              <p class="rating" >★★★★☆</p>
+
             </div>
-          </div></div>
+
+          </div>
+        </div>
+
+        <div class="btn-view">
+            <button class="custom-button">View all</button>
+        </div>
         <!-- <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div>
@@ -384,5 +404,29 @@
       </div>
     </div>
   </section>
+  <script>
+// Get modal and elements
+var modal = document.getElementById('signInModal');
+var userIcon = document.getElementById('user-icon');
+var closeBtn = document.getElementsByClassName('close-btn')[0];
+
+// When the user clicks on the user icon, open the modal
+userIcon.onclick = function() {
+  modal.style.display = 'flex'; // Display modal using flexbox to center it
+}
+
+// When the user clicks on the close button, close the modal
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+}
+
+// When the user clicks outside the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+  </script>
   </body>
 </html>
