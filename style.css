@@ -52,16 +52,23 @@
     line-height: 60px;
     animation: fadeIn 1s ease-in;
 }
+.Collections-fut{
+
+margin-top: 20px;
+
+
+}
 #Collections{
 margin-top: 60px;
     
 }
 .card{
-
+margin-left: 100px;
     text-align: center;
 }
 .row{
 row-gap: 50px;
+
 }
 .card{
 border: none;
@@ -69,9 +76,9 @@ border: none;
     height: 495px;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    margin-right: 0px;
+    /* margin-right: 0px;
     margin-left: auto;
-    
+     */
 }
 .heart-icon {
     position: absolute;
@@ -390,8 +397,10 @@ height: 412px;
 
 }
 .container-9{
-width: 1440px;
-margin-left: 10px;
+/* width: 1440px; */
+/* margin-left: 200px; */
+margin-left: 1px;
+
 }
 .card-title{
 
