@@ -17,46 +17,83 @@
   </head>
   
   <body>
-      <nav id="navbar">
-          <!-- Navbar structure -->
-          <div class="logo">Logo</div>
-          <div id="nav-cont">
-            <a href="#section-two" style="color: #333">Home</a>
-            <a href="#section-three" style="color: #333">Shop</a>
-            <a href="#section-four" style="color: #333">Category</a>
-            <a href="#section-five" style="color: #333">Blog</a>
-            <a href="#section-five" style="color: #333">About</a>
-          </div>
-          <div id="nav-icon">
-            <a href="#" id="search-icon" style="color: #333">
-              <i style="font-size: 20px" class="fas fa-search"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">Logo</a>
+    
+        <!-- Toggle for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Centered nav links and right-aligned icons -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#section-two">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-three">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-four">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-five">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-five">About</a>
+            </li>
+          </ul>
+    
+          <!-- Right-aligned icons -->
+          <div class="d-flex">
+            <a href="#" id="search-icon" class="nav-link">
+              <i class="fas fa-search" style="color: #000000;"></i>
             </a>
-            <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer;">
-              <i style="font-size: 20px" class="fas">&#xf2bd;</i>
+            <button id="user-icon" class="btn nav-link">
+              <i class="fas fa-user"  ></i>
             </button>
-            <a href="#" id="cart-icon" style="color: #333">
-              <i style="font-size: 20px" class="fas fa-shopping-cart"></i>
+            <a href="#" id="cart-icon" class="nav-link">
+              <i class="fas fa-shopping-cart" style="color: #000000;"></i>
             </a>
           </div>
-        </nav>
+        </div>
+      </div>
+    </nav>
         
         <!-- Sign In Modal -->
         <div id="signInModal" class="modal">
-          <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 id="sign-in">Sign In</h2>
-            <form>
-              <label for="email" id="your-mail"><b> Your email</b></label>
-              <input class="in-1" type="email" placeholder="name@example.com" name="email" required><br>
-              <br>
-  
-              <a href="#" class="heper-1">Login with phone number?</a>
-  
-              <button type="submit" class="btn-model"><span id="btn-follow">login to your account</span> </button>
-              <p><span id="not-1">Not registered yet?</span> <a href="#" id="create-1">Create an account</a></p>
-            </form>
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="sign-in" class="modal-title">Sign In</h5>
+                <!-- <button type="button" class="close-btn" data-dismiss="modal">&times;</button> -->
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" id="your-mail"><b>Your email</b></label>
+                    <input type="email" class="form-control in-1" id="email" placeholder="name@example.com" required>
+                  </div>
+        
+                  <!-- Add margin between form elements -->
+                  <a href="#" class="heper-1 mb-3 d-block">Login with phone number?</a>
+        
+                  <button type="submit" class="btn btn-model btn-block mb-3">Login to your account</button>
+        
+                  <p class="mb-0">
+                    <span id="not-1">Not registered yet?</span> 
+                    <a href="#" id="create-1">Create an account</a>
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
+        
+
         
   
   
@@ -78,25 +115,30 @@
         </a></nav>
   
       <!-- Filter and Sort Section -->
-      <div class="filter-sort">
-        <div class="filter">
-          <p>Filter by</p>
+      <div class="filter-sort row align-items-center mb-3">
+        <!-- Filter Section -->
+        <div class="col-12 col-md-4 text-center text-md-left">
+            <p>Filter by</p>
         </div>
-  
-        <div class="product-count">
-          <p>1,036 products</p>
+    
+        <!-- Product Count Section -->
+        <div class="col-12 col-md-4 text-center">
+            <p>1,036 products</p>
         </div>
-  
-        <div class="sort">
-          <label for="sort">Sort by</label>
-          <select id="sort">
-            <option value="featured">Featured</option>
-            <option value="price-low-high">Price: Low to High</option>
-            <option value="price-high-low">Price: High to Low</option>
-            <option value="newest">Newest</option>
-          </select>
+    
+        <!-- Sort Section (moved to the end of the page) -->
+        <div class="col-12 col-md-4 text-center text-md-right mt-3 mt-md-0">
+            <label for="sort" class="d-block">Sort by</label> <!-- Label placed above -->
+            <select id="sort" class="form-control w-100">
+                <option value="featured">Featured</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="newest">Newest</option>
+            </select>
         </div>
-      </div>
+    </div>
+    
+    
     </div>
   
     <div class="row" style="row-gap: 20px;">
@@ -445,69 +487,71 @@
     </div>
   
     <section id="section-five">
-      <div class="container-footer">
-        <div class="row footer-container">
-          <!-- Logo and About Section -->
-          <div class="col-lg-3 col-md-6 footer-column">
-            <div class="footer-logo">
-              <h3>Logo</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
-            </div>
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Logo and About Section -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="footer-logo">
+                      <h3>Logo</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt ut labore.
+                      </p>
+                  </div>
+              </div>
+  
+              <!-- Explore Links -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Explore</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                      <li><a href="#">Payment Security Policy</a></li>
+                      <li><a href="#">Terms of Use Policy</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                      <li><a href="#">Delivery</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Quick Links -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Quick Links</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Order History</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">Specials</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Contact and Social Icons -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Contact Us</h3>
+                  <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+              </div>
           </div>
   
-          <!-- Explore Links -->
-          <div class="col-lg-3 col-md-6 footer-column">
-            <h3>Explore</h3>
-            <ul>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">Payment Security Policy</a></li>
-              <li><a href="#">Terms of Use Policy</a></li>
-              <li><a href="#">FAQ's</a></li>
-              <li><a href="#">Delivery</a></li>
-            </ul>
+          <div class="row">
+              <div class="col-12 text-center">
+                  <p>
+                      © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
+                  </p>
+                  <div class="payment-icons">
+                      <i class="fa-brands fa-cc-visa"></i>
+                      <i class="fa-brands fa-paypal"></i>
+                      <i class="fa-brands fa-cc-mastercard"></i>
+                      <i class="fa fa-cc-amex"></i>
+                      <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                  </div>
+              </div>
           </div>
-  
-          <!-- Quick Links -->
-          <div class="col-lg-3 col-md-6 footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">Specials</a></li>
-            </ul>
-          </div>
-  
-          <!-- Contact and Social Icons -->
-          <div class="col-lg-3 col-md-6 footer-column">
-            <h3>Contact Us</h3>
-            <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="footer-bottom">
-          <p>
-            © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
-          </p>
-          <div class="payment-icons">
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-paypal"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa fa-cc-amex"></i>
-            <i class="fa fa-cc-discover" aria-hidden="true"></i>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
     <script>
       // Get modal and elements
       var modal = document.getElementById('signInModal');
@@ -532,5 +576,5 @@
       }
       
         </script>
-  </body>
+ </body>
   

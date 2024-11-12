@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home page</title>
+        <link
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Logo</a>
+        
+            <!-- Toggle for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Centered nav links and right-aligned icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#section-two">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-three">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-four">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-five">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-five">About</a>
+                </li>
+              </ul>
+        
+              <!-- Right-aligned icons -->
+              <div class="d-flex">
+                <a href="#" id="search-icon" class="nav-link">
+                  <i class="fas fa-search" style="color: #000000;"></i>
+                </a>
+                <button id="user-icon" class="btn nav-link">
+                  <i class="fas fa-user"></i>
+                </button>
+           
+                <a href="#" id="cart-icon" class="nav-link">
+                  <i class="fas fa-shopping-cart" style="color: #000000;"></i>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+            
+            <!-- Sign In Modal -->
+            <div id="signInModal" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 id="sign-in" class="modal-title">Sign In</h5>
+                    <!-- <button type="button" class="close-btn" data-dismiss="modal">&times;</button> -->
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="email" id="your-mail"><b>Your email</b></label>
+                        <input type="email" class="form-control in-1" id="email" placeholder="name@example.com" required>
+                      </div>
+            
+                      <!-- Add margin between form elements -->
+                      <a href="#" class="heper-1 mb-3 d-block">Login with phone number?</a>
+            
+                      <button type="submit" class="btn btn-model btn-block mb-3">Login to your account</button>
+            
+                      <p class="mb-0">
+                        <span id="not-1">Not registered yet?</span> 
+                        <a href="#" id="create-1">Create an account</a>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    
+            
+      
+      
+        <section id="section-2">
+          <p style="background-color: #000000">Free shipping above 300 SAR</p>
+        </section>
+        
+        <div class="container-9">
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumb-2">
+              <a href="#"style="color:#000000;font-family:Source Sans Pro;font-size:14px;">Home</a> / <a href="#" style="color:#000000;font-family:Source Sans Pro;font-size:14px;" >shop</a> /<a href="#" style="color:#767676;font-family:Source Sans Pro;font-size:14px;"> product name
+              </a></nav>
+          </div>
+
+<section class="container my-5">
+    <!-- Progress Indicator -->
+    <div class="checkout-progress">
+        <div class="step active">
+            <div class="circle">1</div>
+            <div class="label">Address</div>
+        </div>
+        <div class="step">
+            <div class="circle">2</div>
+            <div class="label">Shipping Provider</div>
+        </div>
+        <div class="step">
+            <div class="circle">3</div>
+            <div class="label">Payment method</div>
+        </div>
+    </div>
+    
+
+   <!-- Include Bootstrap CSS in your HTML head -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="checkout-content container-fluid">
+    <div class="row">
+        <!-- Address Form Section -->
+        <div class="address-form col-12 col-md-6 mb-4">
+            <h2>Add New Address</h2>
+            <form>
+                <!-- First Name and Last Name Side by Side -->
+                <div class="form-row">
+                    <div class="col-12 col-md-6 mb-2">
+                        <input type="text" placeholder="First name" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                        <input type="text" placeholder="Last name" class="form-control">
+                    </div>
+                </div>
+                <input type="email" placeholder="Email" class="form-control mb-3">
+
+                <!-- Map Placeholder -->
+                <div class="map-container mb-3">
+                    <img src="https://s3-alpha-sig.figma.com/img/7650/2e09/7038a46a24dd3f556ab9830b70406696?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FF8sPpL66xyqghcnop3U-amZUZDCpCwnhXmDUBOrQG~vJNT-ACIT11lmS4UlUrdlFF83dZZreX4S24dRANncW6leSc2od0z2ybWhE-GxGD9khl-L3T7-Kkqo97h9ZKmxK-I34VSe02tAmkRJS8V9v7vzuDN2iSqpM5vM9kRiCSKHObwJ5R8Nk1IRg6JmKEaQAPHq42vFHuLEWuM8uzlKLty1dGfmDV81ivuFw3T-yabOgF1dFdYsZNND4pXgu~ymQsYuG45uS8N3XTlS24d6HthlcxaNyE-l7XNOX3mjaarejZ-QQ8Pa80tCwpAQE1fcQ3FCqafpB79u5Bl4wyaDgg__" alt="Map" class="img-fluid">
+                </div>
+
+                <input type="text" placeholder="Address" class="form-control mb-3">
+                <input type="text" placeholder="Apartment, suite, etc." class="form-control mb-3">
+
+                <!-- City and Country Side by Side -->
+                <div class="form-row">
+                    <div class="col-12 col-md-6 mb-2">
+                        <input type="text" placeholder="City" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                        <select class="form-control">
+                            <option>Saudi Arabia</option>
+                            <!-- Add other countries if needed -->
+                        </select>
+                    </div>
+                </div>
+
+                <input type="text" placeholder="Province" class="form-control mb-3">
+                <input type="text" placeholder="Postal/Zip Code" class="form-control mb-3">
+                <input type="tel" placeholder="Mobile number" class="form-control mb-3">
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="default-address" class="form-check-input">
+                    <label for="default-address" class="form-check-label">Set as default address</label>
+                </div>
+
+                <button type="button" id="add-address" class="btn btn-dark btn-block">Add Address</button>
+            </form>
+        </div>
+
+        <!-- Order Summary Section -->
+        <aside class="order-summary col-12 col-md-6">
+            <h3>Promo Code</h3>
+            <div class="promo-code row mb-3">
+                <div class="col-8">
+                    <input type="text" placeholder="Add promo code" class="form-control">
+                </div>
+                <div class="col-4">
+                    <button id="apply" class="btn btn-dark w-100">Apply</button>
+                </div>
+            </div>
+
+            <h3>Order Summary</h3>
+            <table class="summary-table table w-100">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td class="d-flex align-items-center">
+                        <img src="https://s3-alpha-sig.figma.com/img/29bf/48b2/a33890a13138fbfc7e042ac74bb54045?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kXLzcWHqWgF~PF9glqjvz~DWDNhA4OBFV~5HMMaG6QWcvbXTnrEGMJIUBlsdq7Wx3TJjse832np6gBGG8~cTZph3joLaqWL3ecBpUHtPI~Oai6Ie0nP18XVshKw~DUwFhnxtGED3zDMeiELfDwwKXLLQNPvBXLlhZu8YAG3aajFV8SdMZXF0S74ENGipl2gl5BFYyV4LSKI8lFvALIaj8SWgsjOAUqAf7RMybwB3uIQGtsA~hNE6rET4vy7-GWNhyMMSxUpMmxBvmlHZqc1Rsc19cT~xCH4scD~sfDZtLtuK4QFBgx-WpM8HD3jUqyL2i41ZaU9d8HCio3~7xRxoxw__" alt="Product Image" style="width: 50px; height: auto; margin-right: 10px;">
+                        <div>Product's name<br>Size: XS</div>
+                    </td>
+                    <td>2</td>
+                    <td>SAR 1234</td>
+                </tr>
+                <!-- Repeat for additional products as needed -->
+                <tr>
+                    <td colspan="2">Subtotal:</td>
+                    <td>SAR 1000</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Delivery Fee:</td>
+                    <td>SAR 245</td>
+                </tr>
+                <tr>
+                    <td colspan="2">VAT:</td>
+                    <td>15%</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2">Total:</td>
+                    <td>SAR 1260</td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+</div>
+
+    
+
+    <!-- Bottom Navigation -->
+    <div class="checkout-navigation">
+        <a href="#"  class="btn btn-dark">next</a>
+    </div>
+</section>
+
+
+        
+          <section id="section-five">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Logo and About Section -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-logo">
+                            <h3>Logo</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Explore Links -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Explore</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Payment Security Policy</a></li>
+                            <li><a href="#">Terms of Use Policy</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Delivery</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Specials</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact and Social Icons -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Contact Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" ></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>
+                            © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
+                        </p>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-paypal"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa fa-cc-amex"></i>
+                            <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <script>
+            // Get modal and elements
+            var modal = document.getElementById('signInModal');
+            var userIcon = document.getElementById('user-icon');
+            var closeBtn = document.getElementsByClassName('close-btn')[0];
+            
+            // When the user clicks on the user icon, open the modal
+            userIcon.onclick = function() {
+              modal.style.display = 'flex'; // Display modal using flexbox to center it
+            }
+            
+            // When the user clicks on the close button, close the modal
+            closeBtn.onclick = function() {
+              modal.style.display = 'none';
+            }
+            
+            // When the user clicks outside the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+            
+              </script>
+</body>
+</html>

@@ -19,316 +19,362 @@
   </head>
 
   <body>
-    <nav id="navbar">
-        <!-- Navbar structure -->
-        <div class="logo">Logo</div>
-        <div id="nav-cont">
-          <a href="#section-two" style="color: #333">Home</a>
-          <a href="#section-three" style="color: #333">Shop</a>
-          <a href="#section-four" style="color: #333">Category</a>
-          <a href="#section-five" style="color: #333">Blog</a>
-          <a href="#section-five" style="color: #333">About</a>
-        </div>
-        <div id="nav-icon">
-          <a href="#" id="search-icon" style="color: #333">
-            <i style="font-size: 20px" class="fas fa-search"></i>
-          </a>
-          <button id="user-icon" style="color: #333; background: none; border: none; padding: 0; cursor: pointer;">
-            <i style="font-size: 20px" class="fas">&#xf2bd;</i>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Button, Logo, and Cart for small screens -->
+        <div class="d-flex d-lg-none w-100 justify-content-between">
+          <!-- Navbar Toggler Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="#" id="cart-icon" style="color: #333">
-            <i style="font-size: 20px" class="fas fa-shopping-cart"></i>
+          <!-- Center: Logo -->
+          <a class="navbar-brand mx-auto" href="#">Logo</a>
+          <!-- Right: Cart Icon -->
+          <a href="#" id="cart-icon" class="nav-link">
+            <i class="fas fa-shopping-cart" style="color: #000000;"></i>
           </a>
         </div>
-      </nav>
-      
-      <!-- Sign In Modal -->
-      <div id="signInModal" class="modal">
-        <div class="modal-content">
-          <span class="close-btn">&times;</span>
-          <h2 id="sign-in">Sign In</h2>
-          <form>
-            <label for="email" id="your-mail"><b> Your email</b></label>
-            <input class="in-1" type="email" placeholder="name@example.com" name="email" required><br>
-            <br>
-
-            <a href="#" class="heper-1">Login with phone number?</a>
-
-            <button type="submit" class="btn-model"><span id="btn-follow">login to your account</span> </button>
-            <p><span id="not-1">Not registered yet?</span> <a href="#" id="create-1">Create an account</a></p>
-          </form>
+  
+        <!-- Default Logo for larger screens -->
+        <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
+  
+        <!-- Navbar Collapse for larger screens -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#section-two">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-three">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-four">Category</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-five">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-five">About</a></li>
+          </ul>
+  
+          <!-- Right-aligned icons for large screens -->
+          <div class="d-none d-lg-flex">
+            <a href="#" id="search-icon" class="nav-link"><i class="fas fa-search" style="color: #000000;"></i></a>
+            <button id="user-icon" class="btn nav-link"><i class="fas fa-user"></i></button>
+            <a href="#" id="cart-icon" class="nav-link"><i class="fas fa-shopping-cart" style="color: #000000;"></i></a>
+          </div>
         </div>
       </div>
-      
-
-    
-      <section id="section-two">
-        <p style="background-color: #000000">Free shipping above 300 SAR</p>
-        <div id="Collections-fut">
-          <h2 style="color: #000000">Collections Name</h2>
-        </div>
-        <p style="color: #000000">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore
-        </p>
-      </section>
-    
-      <div class="container-9">
-    
-    <div class="container-">
-      <div class="row">
-        <div class="col-6 col-md-3 ">
-            <div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
-
+    </nav>
+           <!-- Sign In Modal -->
+           <div id="signInModal" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 id="sign-in" class="modal-title">Sign In</h5>
+                  <!-- <button type="button" class="close-btn" data-dismiss="modal">&times;</button> -->
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="email" id="your-mail"><b>Your email</b></label>
+                      <input type="email" class="form-control in-1" id="email" placeholder="name@example.com" required>
+                    </div>
+          
+                    <!-- Add margin between form elements -->
+                    <a href="#" class="heper-1 mb-3 d-block">Login with phone number?</a>
+          
+                    <button type="submit" class="btn btn-model btn-block mb-3">Login to your account</button>
+          
+                    <p class="mb-0">
+                      <span id="not-1">Not registered yet?</span> 
+                      <a href="#" id="create-1">Create an account</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-md-3 ">
-            <div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
+          
+  
+    <!-- Free Shipping Banner -->
+    <section id="section-two">
+      <p style="background-color: #000000">Free shipping above 300 SAR</p>
+      <div id="Collections-fut">
+        <h2 style="color: #000000">Collections Name</h2>
+      </div>
+      <p style="color: #000000">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore
+      </p>
+    </section>
+    
+        <div class="container">
+          <div class="row">
+       <div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
 
-            </div>
-          </div></div>
-        <div class="col-6 col-md-3 "><div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
+<div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
 
-            </div>
-          </div></div>
-        <div class="col-6 col-md-3 ">
+<div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
+
+      <div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-6 col-md-3">
+  <div class="card">
+    <a href="YOUR_LINK_HERE" class="heart-icon">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+        <path
+          d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <a href="YOUR_LINK_HERE">
+      <img
+        class="card-img-top"
+        src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+        alt="Item Image"
+      />
+    </a>
+    <div class="card-body">
+      <h5 class="card-title">Item 15</h5>
+      <p class="card-text">Price: $10.6</p>
+      <p class="rating">★★★★☆</p>
+    </div>
+  </div>
+</div>
+
+          <div class="col-6 col-md-3">
             <div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
+              <a href="YOUR_LINK_HERE" class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="YOUR_LINK_HERE">
+                <img
+                  class="card-img-top"
+                  src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+                  alt="Item Image"
                 />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 85</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Item 15</h5>
+                <p class="card-text">Price: $10.6</p>
+                <p class="rating">★★★★☆</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-md-3 ">
+          <div class="col-6 col-md-3">
             <div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
+              <a href="YOUR_LINK_HERE" class="heart-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="#E0E0E0" />
+                  <path
+                    d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="YOUR_LINK_HERE">
+                <img
+                  class="card-img-top"
+                  src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
+                  alt="Item Image"
                 />
-              </svg>
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Item 15</h5>
+                <p class="card-text">Price: $10.6</p>
+                <p class="rating">★★★★☆</p>
+              </div>
             </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
-
-            </div>
-          </div></div>
-        <div class="col-6 col-md-3 "><div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
-
-            </div>
-          </div></div>
-        <div class="col-6 col-md-3 "><div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
-
-            </div>
-          </div></div>
-        <div class="col-6 col-md-3 ">
-            <div class="card">
-            <div class="heart-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="24" height="24" rx="4" fill="#E0E0E0" />
-                <path
-                  d="M11.2005 6.37802C11.3894 6.62943 11.6855 6.77735 12 6.77735C12.3145 6.77735 12.6106 6.62943 12.7995 6.37802C13.4296 5.53934 14.4295 5 15.5556 5C17.4579 5 19 6.54213 19 8.44444V8.84291C19 13.1054 16.6884 16.6123 12 18.9766C7.3116 16.6123 5 13.1054 5 8.84291V8.44444C5 6.54213 6.54213 5 8.44444 5C9.57055 5 10.5704 5.53934 11.2005 6.37802Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <img
-              class="card-img-top"
-              src="https://s3-alpha-sig.figma.com/img/77d8/591b/8fe7948e35df9f52a5d3697ad1b8cf85?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p-IEFSotPhCTb-v10renTC-jLAt2An9E4z5OfpL1vR~95A43QZSVGg~Y55LoE1ds6ufZcH~z4G8vv4WM1KVOdx0han0sWiqvc3~-XLDIYXi5EVMpXw-h95cwaKz8HFoHoKl2JnGpSuulkzk~6w~xPHMmUxh6UOHFS4gLc9PIJy4gYhWhlk1MfdwqxULDbIdicJvHLcjLb6Rm7JT0V7uqNxYW1o0CoYxm2~UGgsJydpNUIZvz7tWC6--mKboH4P5N8jsDKqXe1-Zu3dqV3P~SNH9m9g8cW2Ba7EEh9lRVs1aNB28j7V0mEsRWT5aX0zqJZeWpICjoVYLA5PdrTCg-NA__"
-              alt="Item Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Item 15</h5>
-              <p class="card-text">Price: $10.6</p>
-              <p class="rating" >★★★★☆</p>
-
-            </div>
-
           </div>
-        </div>
-
-        <div class="btn-view">
-            <button class="custom-button">View all</button>
-        </div>
+          
         <!-- <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div>
@@ -337,73 +383,83 @@
         <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div>
         <div class="col-6 col-md-3 border">Card</div> -->
-      </div>
+        <div class="container text-center mt-4 mb-4">
+          <button class="btn btn-dark custom-button">View All</button>
+       </div>
+       
+      
+       
+        </div>
+
     </div>
     
-  <section id="section-five">
-    <div class="container-footer">
-      <div class="row footer-container">
-        <!-- Logo and About Section -->
-        <div class="col-lg-3 col-md-6 footer-column">
-          <div class="footer-logo">
-            <h3>Logo</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
-            </p>
+    <section id="section-five">
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Logo and About Section -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="footer-logo">
+                      <h3>Logo</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt ut labore.
+                      </p>
+                  </div>
+              </div>
+  
+              <!-- Explore Links -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Explore</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                      <li><a href="#">Payment Security Policy</a></li>
+                      <li><a href="#">Terms of Use Policy</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                      <li><a href="#">Delivery</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Quick Links -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Quick Links</h3>
+                  <ul class="list-unstyled">
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Order History</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">Specials</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Contact and Social Icons -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                  <h3>Contact Us</h3>
+                  <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook" ></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <!-- Explore Links -->
-        <div class="col-lg-3 col-md-6 footer-column">
-          <h3>Explore</h3>
-          <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Payment Security Policy</a></li>
-            <li><a href="#">Terms of Use Policy</a></li>
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Delivery</a></li>
-          </ul>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-lg-3 col-md-6 footer-column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Specials</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact and Social Icons -->
-        <div class="col-lg-3 col-md-6 footer-column">
-          <h3>Contact Us</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  
+          <div class="row">
+              <div class="col-12 text-center">
+                  <p>
+                      © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
+                  </p>
+                  <div class="payment-icons">
+                      <i class="fa-brands fa-cc-visa"></i>
+                      <i class="fa-brands fa-paypal"></i>
+                      <i class="fa-brands fa-cc-mastercard"></i>
+                      <i class="fa fa-cc-amex"></i>
+                      <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>
-          © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
-        </p>
-        <div class="payment-icons">
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-paypal"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa fa-cc-amex"></i>
-          <i class="fa fa-cc-discover" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
   </section>
+  
   <script>
 // Get modal and elements
 var modal = document.getElementById('signInModal');

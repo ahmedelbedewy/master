@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home page</title>
+        <link
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Logo</a>
+        
+            <!-- Toggle for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Centered nav links and right-aligned icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#section-two">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-three">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-four">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-five">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-five">About</a>
+                </li>
+              </ul>
+        
+              <!-- Right-aligned icons -->
+              <div class="d-flex">
+                <a href="#" id="search-icon" class="nav-link">
+                  <i class="fas fa-search" style="color: #000000;"></i>
+                </a>
+                <button id="user-icon" class="btn nav-link">
+                  <i class="fas fa-user"></i>
+                </button>
+                <a href="#" id="heart-icon" class="nav-link">
+                  <!-- Heart SVG Icon -->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.20051 2.37802C7.3894 2.62943 7.68554 2.77735 8 2.77735C8.31446 2.77735 8.61061 2.62943 8.7995 2.37802C9.42962 1.53934 10.4295 1 11.5556 1C13.4579 1 15 2.54213 15 4.44444V4.84291C15 9.10538 12.6884 12.6123 8 14.9766C3.3116 12.6123 1 9.10538 1 4.84291V4.44444C1 2.54213 2.54213 1 4.44444 1C5.57055 1 6.57039 1.53934 7.20051 2.37802Z" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" id="cart-icon" class="nav-link">
+                  <i class="fas fa-shopping-cart" style="color: #000000;"></i>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+            
+            <!-- Sign In Modal -->
+            <div id="signInModal" class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 id="sign-in" class="modal-title">Sign In</h5>
+                    <!-- <button type="button" class="close-btn" data-dismiss="modal">&times;</button> -->
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="email" id="your-mail"><b>Your email</b></label>
+                        <input type="email" class="form-control in-1" id="email" placeholder="name@example.com" required>
+                      </div>
+            
+                      <!-- Add margin between form elements -->
+                      <a href="#" class="heper-1 mb-3 d-block">Login with phone number?</a>
+            
+                      <button type="submit" class="btn btn-model btn-block mb-3">Login to your account</button>
+            
+                      <p class="mb-0">
+                        <span id="not-1">Not registered yet?</span> 
+                        <a href="#" id="create-1">Create an account</a>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    
+            
+      
+      
+        <section id="section-2">
+          <p style="background-color: #000000">Free shipping above 300 SAR</p>
+        </section>
+        
+        <div class="container-9">
+            <!-- Breadcrumb Navigation -->
+            <nav class="breadcrumb">
+              <a href="#"style="color:#000000;font-family:Source Sans Pro;font-size:14px;">Home</a> / <a href="#" style="color:#000000;font-family:Source Sans Pro;font-size:14px;" >shop</a> /<a href="#" style="color:#767676;font-family:Source Sans Pro;font-size:14px;"> product name
+              </a></nav>
+        
+         
+          
+          
+          </div>
+
+
+
+          <section class="container my-5">
+            <div class="text-center">
+                <h3 id="text-cart">Your cart</h3>
+            </div>
+        
+            <table class="table cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="product-image.jpg" alt="Product Image" class="product-img">
+                            <div class="product-details">
+                                <p>Product's name</p>
+                                <p>Size: XS</p>
+                                <a href="#" class="remove-link">Remove</a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="original-price">$0.00</span>
+                            <span class="discounted-price text-danger">$0.00</span>
+                        </td>
+                        <td>
+                            <div class="quantity-control">
+                                <button class="btn btn-light">-</button>
+                                <input type="number" value="1" class="quantity-input">
+                                <button class="btn btn-light">+</button>
+                            </div>
+                        </td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <img src="product-image.jpg" alt="Product Image" class="product-img">
+                          <div class="product-details">
+                            <p id="title-pro">Product's name</p>
+                            <p id="pro-size"><span style="color: #767676;">Size:|</span> XS</p>
+                            <a href="#" class="remove-link">Remove</a>
+                          </div>
+                      </td>
+                      <td>
+                          <span class="original-price">$0.00</span>
+                          <span class="discounted-price text-danger">$0.00</span>
+                      </td>
+                      <td>
+                          <div class="quantity-control">
+                              <button class="btn btn-light">-</button>
+                              <input type="number" value="1" class="quantity-input">
+                              <button class="btn btn-light">+</button>
+                          </div>
+                      </td>
+                      <td>$0.00</td>
+                  </tr>             <tr>
+                    <td>
+                        <img src="product-image.jpg" alt="Product Image" class="product-img">
+                        <div class="product-details">
+                            <p id="title-pro">Product's name</p>
+                            <p id="pro-size"><span style="color: #767676;">Size:|</span> XS</p>                            <a href="#" class="remove-link">Remove</a>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="original-price">$0.00</span>
+                        <span class="discounted-price text-danger">$0.00</span>
+                    </td>
+                    <td>
+                        <div class="quantity-control">
+                            <button class="btn btn-light">-</button>
+                            <input type="number" value="1" class="quantity-input">
+                            <button class="btn btn-light">+</button>
+                        </div>
+                    </td>
+                    <td>$0.00</td>
+                </tr>             <tr>
+                  <td>
+                      <img src="product-image.jpg" alt="Product Image" class="product-img">
+                      <div class="product-details">
+                        <p id="title-pro">Product's name</p>
+                                           <p id="pro-size"><span style="color: #767676;">Size:|</span> XS</p>
+                        <a href="#" class="remove-link">Remove</a>
+                      </div>
+                  </td>
+                  <td>
+                      <span class="original-price">$0.00</span>
+                      <span class="discounted-price text-danger">$0.00</span>
+                  </td>
+                  <td>
+                      <div class="quantity-control">
+                          <button class="btn btn-light">-</button>
+                          <input type="number" value="1" class="quantity-input">
+                          <button class="btn btn-light">+</button>
+                      </div>
+                  </td>
+                  <td>$0.00</td>
+              </tr>
+                    <!-- Repeat for each product in the cart -->
+                </tbody>
+            </table>
+        
+            <div class="cart-summary">
+                <p style="color:#000000 ;">Subtotal: $0.00</p>
+                <p style="color: #767676;">15% VAT included. Shipping calculated at checkout</p>
+                <div class="cart-actions">
+                    <a href="#" class="btn btn-outline-dark">Continue Shopping</a>
+                    <a href="#" class="btn btn-dark">Checkout</a>
+                </div>
+            </div>
+            
+        </section>
+          
+          <section id="section-five">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Logo and About Section -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-logo">
+                            <h3>Logo</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Explore Links -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Explore</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Payment Security Policy</a></li>
+                            <li><a href="#">Terms of Use Policy</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Delivery</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Specials</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact and Social Icons -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h3>Contact Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" ></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>
+                            © 2024 Draft. All Rights Reserved. Terms, Privacy & Accessibility.
+                        </p>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-paypal"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa fa-cc-amex"></i>
+                            <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <script>
+            // Get modal and elements
+            var modal = document.getElementById('signInModal');
+            var userIcon = document.getElementById('user-icon');
+            var closeBtn = document.getElementsByClassName('close-btn')[0];
+            
+            // When the user clicks on the user icon, open the modal
+            userIcon.onclick = function() {
+              modal.style.display = 'flex'; // Display modal using flexbox to center it
+            }
+            
+            // When the user clicks on the close button, close the modal
+            closeBtn.onclick = function() {
+              modal.style.display = 'none';
+            }
+            
+            // When the user clicks outside the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+            
+              </script>
+</body>
+</html>
